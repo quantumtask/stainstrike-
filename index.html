@@ -1,0 +1,1534 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stain Strike | Fabric Couch and Rug Cleaning</title>
+  <meta name="description" content="Fabric couch and rug cleaning by Stain Strike. Send WhatsApp photos for an exact quote before booking.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    const STAIN_STRIKE_PHONE = "0768758456";
+    const STAIN_STRIKE_WA = "27768758456";
+    const STAIN_STRIKE_WA_PREFILL = "Hi, I need couch/rug cleaning. Photos + my area: ";
+    const STAIN_STRIKE_EMAIL = "johan@stainstrike.co.za";
+    document.documentElement.classList.add("js");
+  </script>
+  <style>
+    :root {
+      --bg: #f4f6fb;
+      --surface: #ffffff;
+      --ink: #141d42;
+      --muted: #5e6c8f;
+      --line: #dce4f5;
+      --brand: #2f68f6;
+      --brand-dark: #121b46;
+      --radius-xl: 28px;
+      --radius-lg: 18px;
+      --radius-md: 14px;
+      --shadow-soft: 0 18px 40px rgba(18, 31, 73, 0.08);
+      --ease: cubic-bezier(.22, .84, .24, 1);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: "Manrope", sans-serif;
+      background:
+        radial-gradient(900px 380px at 6% -2%, rgba(47, 104, 246, 0.1), transparent 70%),
+        var(--bg);
+      overflow-x: hidden;
+    }
+
+    .container {
+      width: min(1240px, 92vw);
+      margin: 0 auto;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 10px;
+      top: -44px;
+      z-index: 100;
+      background: var(--brand-dark);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .skip-link:focus { top: 10px; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      background: rgba(244, 246, 251, 0.88);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(20, 29, 66, 0.08);
+    }
+
+    .nav-wrap {
+      min-height: 78px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .brand {
+      text-decoration: none;
+      font-family: "Sora", sans-serif;
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+      color: var(--ink);
+      white-space: nowrap;
+    }
+
+    .brand span { color: var(--brand); }
+
+    nav {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--ink);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+
+    nav a:hover {
+      color: var(--brand);
+      background: #e8efff;
+    }
+
+    nav a.nav-cta {
+      background: var(--brand-dark);
+      color: #fff;
+    }
+
+    .menu-toggle {
+      display: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 8px 12px;
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    main { padding: 28px 0 72px; }
+    main section[id] { scroll-margin-top: 98px; }
+
+    .hero {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-xl);
+      box-shadow: var(--shadow-soft);
+      padding: 18px;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.96fr;
+      gap: 14px;
+      align-items: stretch;
+    }
+
+    .hero-copy {
+      border-radius: 20px;
+      border: 1px solid #e2e9f8;
+      background: #f2f5fb;
+      padding: clamp(22px, 3.5vw, 46px);
+      min-height: 560px;
+      display: grid;
+      align-content: center;
+      gap: 14px;
+    }
+
+    .hero-copy h1,
+    h2,
+    h3 {
+      font-family: "Sora", sans-serif;
+      margin: 0;
+    }
+
+    .eyebrow {
+      margin: 0;
+      color: var(--brand);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.76rem;
+      font-weight: 800;
+    }
+
+    .hero-copy h1 {
+      max-width: 11ch;
+      font-size: clamp(2rem, 4.6vw, 4.1rem);
+      line-height: 1.03;
+      letter-spacing: -0.03em;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      max-width: 45ch;
+      line-height: 1.5;
+      font-size: clamp(1rem, 1.45vw, 1.24rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding-top: 3px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 50px;
+      padding: 9px 22px;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: transform 0.28s var(--ease), box-shadow 0.28s var(--ease), background 0.22s ease;
+    }
+
+    .btn.primary {
+      background: var(--brand);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(47, 104, 246, 0.25);
+    }
+
+    .btn.primary:hover {
+      transform: translateY(-2px);
+      background: #285ce0;
+    }
+
+    .btn.secondary {
+      background: var(--brand-dark);
+      color: #fff;
+      box-shadow: 0 10px 22px rgba(18, 27, 70, 0.25);
+    }
+
+    .btn.secondary:hover {
+      transform: translateY(-2px);
+      background: #0e1638;
+    }
+
+    .review-strip {
+      margin-top: 6px;
+      padding-top: 14px;
+      border-top: 1px solid #d6deef;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .review-item {
+      display: grid;
+      gap: 2px;
+      min-width: 170px;
+    }
+
+    .review-item strong {
+      font-size: 0.88rem;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .review-item span {
+      color: #495885;
+      font-weight: 700;
+      font-size: 0.92rem;
+    }
+
+    .hero-media {
+      position: relative;
+      min-height: 560px;
+      border: 1px solid #d9e3fb;
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .hero-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.03);
+      transition: transform 1.4s var(--ease);
+    }
+
+    body.loaded .hero-media img { transform: scale(1); }
+
+    .stat-card {
+      position: absolute;
+      left: 14px;
+      right: 14px;
+      bottom: 14px;
+      border: 1px solid rgba(214, 224, 248, 0.95);
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.92);
+      padding: 14px;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 12px 26px rgba(13, 28, 69, 0.14);
+    }
+
+    .stat-value {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.34rem, 2.2vw, 2rem);
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+    }
+
+    .stat-text {
+      margin: 6px 0 0;
+      color: #4b5880;
+      line-height: 1.45;
+      font-size: 0.98rem;
+    }
+
+    .stack {
+      margin-top: 60px;
+      display: grid;
+      gap: 68px;
+    }
+
+    .section {
+      display: grid;
+      gap: 14px;
+    }
+
+    .section-title {
+      font-size: clamp(1.65rem, 2.8vw, 3rem);
+      line-height: 1.16;
+      letter-spacing: -0.02em;
+      max-width: 20ch;
+    }
+
+    .section-sub {
+      margin: 0;
+      max-width: 72ch;
+      color: var(--muted);
+      line-height: 1.58;
+      font-size: 1rem;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .service-card,
+    .media-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #f9fbff;
+      min-height: 240px;
+      overflow: hidden;
+    }
+
+    .service-card {
+      padding: 18px;
+      display: grid;
+      align-content: start;
+      gap: 10px;
+    }
+
+    .service-card h3 {
+      font-size: 1.45rem;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .service-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.52;
+      font-size: 1.01rem;
+    }
+
+    .service-card a {
+      margin-top: auto;
+      color: var(--ink);
+      font-weight: 700;
+      text-underline-offset: 2px;
+    }
+
+    .service-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: var(--brand);
+      color: #fff;
+      font-size: 0.8rem;
+      font-family: "Sora", sans-serif;
+      font-weight: 700;
+      justify-self: end;
+    }
+
+    .media-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s var(--ease);
+    }
+    .media-card:hover img { transform: scale(1.03); }
+
+    .how-head {
+      text-align: center;
+      display: grid;
+      gap: 12px;
+      justify-items: center;
+      margin-bottom: 18px;
+    }
+
+    .how-head .section-title { max-width: 12ch; }
+
+    .how-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .how-card {
+      position: relative;
+      border: none;
+      border-radius: 16px;
+      background: #f0f3f9;
+      min-height: 370px;
+      padding: 24px 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    .how-card .step {
+      position: absolute;
+      top: 18px;
+      left: 22px;
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      font-size: 4rem;
+      line-height: 1;
+      color: #a8b2c8;
+      letter-spacing: -0.04em;
+    }
+
+    .how-card h3 {
+      font-family: "Manrope", sans-serif;
+      font-weight: 700;
+      font-size: clamp(1.7rem, 1.95vw, 2.25rem);
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+
+    .how-card p {
+      margin: 0;
+      color: #556182;
+      line-height: 1.42;
+      font-size: 1.16rem;
+    }
+
+    .how-card.cta {
+      background: #121b47;
+      color: #fff;
+      transform: rotate(-2.6deg);
+      box-shadow: 0 14px 30px rgba(18, 27, 70, 0.27);
+      transition: transform 0.35s var(--ease);
+      justify-content: space-between;
+      padding-top: 32px;
+    }
+
+    .how-card.cta:hover { transform: rotate(-2deg) translateY(-2px); }
+    .how-card.cta .cta-star {
+      color: #8ea3ff;
+      font-size: 1.7rem;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .how-card.cta h3 {
+      color: #fff;
+      font-size: clamp(1.9rem, 2vw, 2.35rem);
+    }
+    .how-card.cta p { color: #d7defa; }
+    .how-card.cta .btn {
+      width: 100%;
+      min-height: 56px;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 0.95fr 1.05fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .why-copy {
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .why-copy p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.58;
+      max-width: 44ch;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .feature-item {
+      border-radius: 14px;
+      border: 1px solid #dfe6f7;
+      background: #fff;
+      padding: 15px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: #e7efff;
+      color: var(--brand);
+      font-family: "Sora", sans-serif;
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    .feature-item h3 {
+      font-size: 1.05rem;
+      line-height: 1.3;
+    }
+
+    .feature-item p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+      font-size: 0.95rem;
+    }
+
+    .ticker {
+      margin-top: 18px;
+      border-top: 1px solid #e1e8f7;
+      border-bottom: 1px solid #e1e8f7;
+      overflow: hidden;
+      background: #f8faff;
+    }
+
+    .ticker-track {
+      width: max-content;
+      white-space: nowrap;
+      display: flex;
+      gap: 34px;
+      padding: 14px 0;
+      color: #c2c9d9;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(2rem, 5.2vw, 5rem);
+      letter-spacing: -0.03em;
+      animation: ticker-scroll 36s linear infinite;
+    }
+
+    .ticker-track span { display: inline-block; }
+
+    .portfolio-head,
+    .insights-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .portfolio-grid {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .portfolio-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .portfolio-card img {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s var(--ease);
+    }
+    .portfolio-card:hover img { transform: scale(1.03); }
+
+    .portfolio-copy {
+      padding: 10px 12px 13px;
+      display: grid;
+      gap: 4px;
+    }
+
+    .portfolio-kicker {
+      color: #6d7a9d;
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .portfolio-copy p {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.06rem;
+      color: #1d2a57;
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 0.92fr 1.08fr;
+      gap: 14px;
+    }
+
+    .booking-image {
+      border: 1px solid #dbe3f8;
+      border-radius: 16px;
+      overflow: hidden;
+    }
+
+    .booking-image img {
+      width: 100%;
+      height: 100%;
+      min-height: 460px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .booking-panel {
+      border-radius: 16px;
+      border: 1px solid #1b2a60;
+      background: #111c47;
+      color: #fff;
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+      align-content: start;
+    }
+
+    .booking-panel p {
+      margin: 0;
+      color: #d3dcff;
+      line-height: 1.52;
+    }
+
+    .booking-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .booking-form .full { grid-column: 1 / -1; }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+      width: 100%;
+      border-radius: 999px;
+      border: 1px solid #2b3e7f;
+      background: #101a3a;
+      color: #f3f7ff;
+      font: inherit;
+      padding: 10px 12px;
+      transition: border-color 0.2s ease;
+    }
+
+    .booking-form textarea {
+      border-radius: 12px;
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .booking-form input::placeholder,
+    .booking-form textarea::placeholder {
+      color: #9facd9;
+    }
+
+    .booking-form input:focus,
+    .booking-form select:focus,
+    .booking-form textarea:focus {
+      outline: none;
+      border-color: #4f7bf1;
+    }
+
+    .metric-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 4px;
+    }
+
+    .testi-metric {
+      margin: 0;
+      font-family: "Sora", sans-serif;
+      font-size: clamp(1.9rem, 3.1vw, 3rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+    }
+
+    .logo-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      color: #5e6b8c;
+      font-weight: 700;
+      font-size: 0.95rem;
+      align-items: center;
+    }
+
+    .logo-row span::before {
+      content: "*";
+      color: #98a6c7;
+      margin-right: 7px;
+      font-size: 0.7rem;
+      vertical-align: middle;
+    }
+
+    .quote-grid {
+      border-top: 1px solid #dbe3f6;
+      padding-top: 14px;
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .quote-grid img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid #dbe3f6;
+      border-radius: 14px;
+      display: block;
+    }
+
+    .quote-card {
+      border: 1px solid #dce4f7;
+      border-radius: 14px;
+      background: #fafcff;
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .quote-card blockquote {
+      margin: 0;
+      font-size: clamp(1.16rem, 1.8vw, 1.72rem);
+      line-height: 1.46;
+      color: #1a2858;
+      letter-spacing: -0.01em;
+    }
+
+    .quote-card cite {
+      font-style: normal;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .post-grid {
+      margin-top: 10px;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .post-card {
+      border: 1px solid #dde4f7;
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      transition: transform 0.25s var(--ease), box-shadow 0.25s var(--ease);
+    }
+
+    .post-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(20, 35, 80, 0.08);
+    }
+
+    .post-card img {
+      width: 100%;
+      aspect-ratio: 16 / 10;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.45s var(--ease);
+    }
+    .post-card:hover img { transform: scale(1.03); }
+
+    .post-copy {
+      padding: 10px 12px 13px;
+      display: grid;
+      gap: 6px;
+    }
+
+    .post-date {
+      color: #6f7ca0;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .post-copy h3 {
+      font-size: 1.1rem;
+      line-height: 1.32;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+
+    .info-grid {
+      margin-top: 4px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .panel {
+      border: 1px solid #dce4f7;
+      border-radius: 14px;
+      background: #fff;
+      padding: 16px;
+      display: grid;
+      gap: 10px;
+      align-content: start;
+    }
+
+    .panel h3 {
+      margin: 0;
+      font-size: 1.08rem;
+    }
+
+    .panel ul {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      line-height: 1.56;
+      display: grid;
+      gap: 6px;
+    }
+
+    .subscribe {
+      margin-top: 64px;
+      border-radius: 18px;
+      border: 1px solid #182a60;
+      background:
+        radial-gradient(680px 260px at 0% 0%, rgba(69, 101, 199, 0.46), transparent 66%),
+        #101c47;
+      color: #fff;
+      padding: 24px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .subscribe h2 {
+      margin: 0;
+      font-size: clamp(1.42rem, 2.4vw, 2.2rem);
+      line-height: 1.22;
+      letter-spacing: -0.02em;
+    }
+
+    .subscribe p {
+      margin: 0;
+      color: #cad5f8;
+      line-height: 1.5;
+    }
+
+    .subscribe-form {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .subscribe-form input {
+      flex: 1 1 300px;
+      min-height: 50px;
+      border-radius: 999px;
+      border: 1px solid #3f5390;
+      background: #edf2ff;
+      color: #1b2858;
+      font: inherit;
+      padding: 10px 14px;
+    }
+
+    .subscribe-form .btn { min-width: 170px; }
+
+    .subscribe-points {
+      margin: 6px 0 0;
+      padding-left: 18px;
+      color: #c8d4fb;
+      line-height: 1.5;
+      display: grid;
+      gap: 5px;
+    }
+
+    .footer-dark {
+      margin-top: 14px;
+      border: 1px solid #1b2d63;
+      border-radius: 16px;
+      background: #0f1a40;
+      color: #d0daf8;
+      padding: 20px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr 0.8fr 1fr;
+      gap: 16px;
+    }
+
+    .footer-block h3 {
+      margin: 0 0 8px;
+      color: #fff;
+      font-size: 1.04rem;
+    }
+
+    .footer-block p,
+    .footer-block li,
+    .footer-block a {
+      margin: 0;
+      color: #c4cff2;
+      text-decoration: none;
+      font-size: 0.94rem;
+      line-height: 1.55;
+    }
+
+    .footer-block ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 4px;
+    }
+
+    .footer-bottom {
+      margin-top: 14px;
+      padding-top: 10px;
+      border-top: 1px solid rgba(196, 208, 244, 0.25);
+      text-align: center;
+      color: #adbbe6;
+      font-size: 0.9rem;
+    }
+
+    .hero-copy .anim {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.55s var(--ease), transform 0.55s var(--ease);
+      transition-delay: var(--d, 0ms);
+    }
+
+    body.loaded .hero-copy .anim {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal {
+      opacity: 1;
+      transform: none;
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.62s var(--ease), transform 0.62s var(--ease);
+    }
+
+    .js .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes ticker-scroll {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 1120px) {
+      .hero-grid,
+      .booking-grid,
+      .why-grid,
+      .quote-grid,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-copy,
+      .hero-media { min-height: 0; }
+
+      .hero-copy h1 { max-width: 15ch; }
+
+      .service-grid,
+      .how-grid,
+      .post-grid,
+      .footer-grid,
+      .feature-grid,
+      .portfolio-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 900px) {
+      .menu-toggle { display: inline-flex; }
+
+      nav {
+        display: none;
+        position: absolute;
+        left: 4vw;
+        right: 4vw;
+        top: calc(100% + 8px);
+        background: rgba(255, 255, 255, 0.98);
+        border: 1px solid #d8e1f6;
+        border-radius: 12px;
+        padding: 10px;
+        flex-direction: column;
+      }
+
+      nav.open { display: flex; }
+      .nav-wrap { position: relative; }
+
+      .stack { gap: 56px; }
+    }
+
+    @media (max-width: 680px) {
+      main { padding-top: 16px; }
+      .hero { padding: 12px; border-radius: 20px; }
+      .hero-copy { padding: 20px; }
+      .hero-copy h1 { font-size: clamp(1.9rem, 9.2vw, 2.9rem); }
+      .actions { flex-direction: column; }
+      .btn { width: 100%; }
+      .how-card {
+        min-height: 240px;
+      }
+      .how-card .step {
+        font-size: 2.1rem;
+      }
+      .how-card h3 {
+        font-size: 1.3rem;
+      }
+      .how-card p {
+        font-size: 0.94rem;
+      }
+      .how-card.cta .btn {
+        min-height: 50px;
+      }
+      .booking-form,
+      .service-grid,
+      .how-grid,
+      .feature-grid,
+      .portfolio-grid,
+      .post-grid,
+      .footer-grid,
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+      .subscribe-form { flex-direction: column; }
+      .subscribe-form input {
+        flex: 0 0 auto;
+        width: 100%;
+        min-height: 50px;
+      }
+      .subscribe-form .btn {
+        width: 100%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html"><span>Stain</span>Strike</a>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" aria-label="Primary">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#why">Why Us</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Booking</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#packages">Packages</a>
+        <a href="#service-zones">Coverage</a>
+        <a class="nav-cta js-wa" href="#" target="_blank" rel="noopener noreferrer">Quick Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="hero reveal in">
+        <div class="hero-grid">
+          <article class="hero-copy">
+            <p class="eyebrow anim" style="--d:70ms">Fabric Couch and Rug Specialists</p>
+            <h1 class="anim" style="--d:130ms">Pristine Couch and Rug Cleaning</h1>
+            <p class="lead anim" style="--d:200ms">Send your photos on WhatsApp and get an exact quote before booking. We clean fabric couches and rugs only, with stain-first treatment and deep extraction.</p>
+            <div class="actions anim" style="--d:260ms">
+              <a class="btn primary js-wa" href="#" target="_blank" rel="noopener noreferrer">WhatsApp Quote</a>
+              <a class="btn secondary js-call" href="#">Call Now</a>
+            </div>
+            <div class="review-strip anim" style="--d:320ms">
+              <div class="review-item">
+                <strong>Reviewed on HomeCare</strong>
+                <span>4.9 service rating</span>
+              </div>
+              <div class="review-item">
+                <strong>Verified Clients</strong>
+                <span>5.0 response speed score</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="hero-media">
+            <img src="https://images.pexels.com/photos/4107286/pexels-photo-4107286.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1600&h=1000" alt="Technician vacuuming a rug next to a fabric couch" decoding="async" fetchpriority="high">
+            <div class="stat-card">
+              <p class="stat-value">300+ homes serviced</p>
+              <p class="stat-text">Fast response across Alberton, Germiston, Boksburg and nearby areas.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="stack">
+        <section id="services" class="section reveal">
+          <p class="eyebrow">Services</p>
+          <h2 class="section-title">Focused Services, Clear Scope</h2>
+          <p class="section-sub">Cleaner visual structure like your template: mixed photo and text cards, minimal clutter, relevant couch and rug service content.</p>
+
+          <div class="service-grid">
+            <article class="media-card">
+              <img src="https://images.pexels.com/photos/6496046/pexels-photo-6496046.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900" alt="Cleaner vacuuming near a white couch in a living room" decoding="async">
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">01</div>
+              <h3>Fabric Couch Cleaning</h3>
+              <p>Deep extraction for 2-seater, 3-seater and corner couches with stain-first prep.</p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">02</div>
+              <h3>Rug Cleaning</h3>
+              <p>Small to large rugs cleaned on-site with measured moisture and quick dry guidance.</p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">03</div>
+              <h3>Stain Treatment</h3>
+              <p>Coffee, wine, food and pet stains assessed from photos before booking confirmation.</p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">04</div>
+              <h3>Hygiene Add-ons</h3>
+              <p>Optional odour treatment and fabric protector where needed. Leather is excluded.</p>
+              <a href="#contact">View Details</a>
+            </article>
+
+            <article class="media-card">
+              <img src="https://images.pexels.com/photos/5591487/pexels-photo-5591487.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900" alt="Cleaner vacuuming a rug in front of a fabric couch" decoding="async">
+            </article>
+          </div>
+        </section>
+
+        <section id="process" class="section reveal">
+          <div class="how-head">
+            <p class="eyebrow">* How It Works</p>
+            <h2 class="section-title">Effortless Cleaning in 3 Easy Steps!</h2>
+          </div>
+
+          <div class="how-grid">
+            <article class="how-card">
+              <p class="step">01</p>
+              <h3>Book / Schedule</h3>
+              <p>Easily book your cleaning service online or by phone at your convenience.</p>
+            </article>
+
+            <article class="how-card">
+              <p class="step">02</p>
+              <h3>Make Appointment</h3>
+              <p>Book your cleaning service quickly and easily online or by phone anytime.</p>
+            </article>
+
+            <article class="how-card">
+              <p class="step">03</p>
+              <h3>Lets Clean Home</h3>
+              <p>Our trained staff use safe and effective methods to deliver spotless results.</p>
+            </article>
+
+            <article class="how-card cta">
+              <span class="cta-star" aria-hidden="true">*</span>
+              <div>
+                <h3>Ready for a Spotless Home Today and Always?</h3>
+                <p>Fast quote turnaround with clear scope before arrival.</p>
+              </div>
+              <a class="btn primary js-wa" href="#" target="_blank" rel="noopener noreferrer">Book Now</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="why" class="section reveal">
+          <p class="eyebrow">Why Stain Strike</p>
+          <h2 class="section-title">Superior Cleaning, Expert-Level Results</h2>
+
+          <div class="why-grid">
+            <article class="why-copy">
+              <p>Stain Strike focuses on practical, high-result fabric cleaning. Every booking starts with photos so expectations are accurate before scheduling.</p>
+              <a class="btn secondary" href="#contact">About Us</a>
+            </article>
+
+            <div class="feature-grid">
+              <article class="feature-item">
+                <span class="feature-icon">01</span>
+                <h3>Deep Clean</h3>
+                <p>We remove built-up dirt, oils and stain residue from fabric fibers.</p>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon">02</span>
+                <h3>Safe Products</h3>
+                <p>Fabric-safe methods suited for homes with kids and pets.</p>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon">03</span>
+                <h3>Quick Service</h3>
+                <p>Rapid WhatsApp response and appointment confirmation.</p>
+              </article>
+              <article class="feature-item">
+                <span class="feature-icon">04</span>
+                <h3>Affordable Pricing</h3>
+                <p>Photo-based quote first, no surprise charges on arrival.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+                <span>Fabric Couch Cleaning * Rug Cleaning * Stain Treatment * Deep Extraction *</span>
+                <span>Fabric Couch Cleaning * Rug Cleaning * Stain Treatment * Deep Extraction *</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="portfolio" class="section reveal">
+          <div class="portfolio-head">
+            <div>
+              <p class="eyebrow">Portfolio</p>
+              <h2 class="section-title">Keep Your Vision to Our Latest Projects</h2>
+            </div>
+            <a class="btn secondary" href="#contact">View All Portfolio</a>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card">
+              <img src="https://images.pexels.com/photos/4107284/pexels-photo-4107284.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=675" alt="Close-up of deep rug vacuum cleaning" decoding="async">
+              <div class="portfolio-copy">
+                <span class="portfolio-kicker">Organized Living</span>
+                <p>PureShine: Deep Clean Experts</p>
+              </div>
+            </article>
+            <article class="portfolio-card">
+              <img src="https://images.pexels.com/photos/5591455/pexels-photo-5591455.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=675" alt="Vacuuming around a couch in a lounge area" decoding="async">
+              <div class="portfolio-copy">
+                <span class="portfolio-kicker">Deep Cleaning</span>
+                <p>FreshNest: Transforming Living Spaces</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section reveal">
+          <p class="eyebrow">Book Appointment</p>
+          <h2 class="section-title">Schedule Your Cleaning Today</h2>
+
+          <div class="booking-grid">
+            <article class="booking-image">
+              <img src="https://images.pexels.com/photos/6195278/pexels-photo-6195278.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=900" alt="Professional cleaning team working in a living room" decoding="async">
+            </article>
+
+            <article class="booking-panel">
+              <p>Use this quick form as a prep guide, then send everything on WhatsApp for exact quote and appointment lock-in.</p>
+              <form class="booking-form" aria-label="Booking information guide">
+                <input type="text" placeholder="Your Name">
+                <input type="tel" placeholder="Phone Number">
+                <select>
+                  <option selected>Choose Service</option>
+                  <option>Fabric Couch Cleaning</option>
+                  <option>Rug Cleaning</option>
+                </select>
+                <input type="text" placeholder="Your Area">
+                <textarea class="full" placeholder="Write your message here..."></textarea>
+              </form>
+              <a class="btn primary js-wa" href="#" target="_blank" rel="noopener noreferrer">Contact Now</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="testimonials" class="section reveal">
+          <p class="eyebrow">Client Reviews</p>
+          <div class="metric-row">
+            <p class="testi-metric">5095+ Happy Customers & Counting</p>
+            <div class="logo-row" aria-label="Trusted partners placeholders">
+              <span>HomeCare</span>
+              <span>Spotless Group</span>
+              <span>Fresh Living</span>
+            </div>
+          </div>
+
+          <div class="quote-grid">
+            <img src="https://images.pexels.com/photos/6953808/pexels-photo-6953808.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=1200" alt="Happy homeowner smiling on a clean couch" decoding="async">
+            <article class="quote-card">
+              <blockquote>"The cleaning service was fantastic. They transformed my home and left it spotless. From the moment they arrived, the team was professional and detail-focused."</blockquote>
+              <cite>Sarah Johnson, Homeowner</cite>
+            </article>
+          </div>
+        </section>
+
+        <section id="packages" class="section reveal">
+          <div class="insights-head">
+            <div>
+              <p class="eyebrow">Service Packages</p>
+              <h2 class="section-title">Popular Cleaning Packages and Add-Ons</h2>
+            </div>
+            <a class="btn secondary js-wa" href="#" target="_blank" rel="noopener noreferrer">Request Package Quote</a>
+          </div>
+
+          <div class="post-grid">
+            <article class="post-card">
+              <img src="https://images.pexels.com/photos/7513103/pexels-photo-7513103.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=750" alt="Fabric-safe cleaning supplies set beside a couch" decoding="async">
+              <div class="post-copy">
+                <p class="post-date">Starter Package</p>
+                <h3>Fabric Couch Refresh</h3>
+                <p class="section-sub">Deep clean for one standard fabric couch with spot treatment and deodorizing finish.</p>
+              </div>
+            </article>
+
+            <article class="post-card">
+              <img src="https://images.pexels.com/photos/27176672/pexels-photo-27176672.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=750" alt="Handheld vacuum cleaning on couch and rug" decoding="async">
+              <div class="post-copy">
+                <p class="post-date">Most Booked</p>
+                <h3>Rug Rescue Package</h3>
+                <p class="section-sub">Pre-treatment and extraction for one medium rug plus high-traffic edge detailing.</p>
+              </div>
+            </article>
+
+            <article class="post-card">
+              <img src="https://images.pexels.com/photos/5591483/pexels-photo-5591483.jpeg?auto=compress&cs=tinysrgb&fit=crop&w=1200&h=750" alt="Vacuum cleaning around a couch and rug at home" decoding="async">
+              <div class="post-copy">
+                <p class="post-date">Bundle Deal</p>
+                <h3>Full Lounge Reset</h3>
+                <p class="section-sub">Corner couch plus rug cleaning in one visit with optional odour and protector add-ons.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="info" class="section reveal">
+          <p class="eyebrow">Quick Info</p>
+          <h2 class="section-title">Common Questions and Service Areas</h2>
+
+          <div class="info-grid">
+            <article class="panel">
+              <h3>Common Questions</h3>
+              <ul>
+                <li>We clean fabric couches and rugs only. Leather is excluded.</li>
+                <li>Stain outcomes are assessed honestly from your photos first.</li>
+                <li>Most items dry within a few hours with normal airflow.</li>
+                <li>WhatsApp quote is required before booking confirmation.</li>
+              </ul>
+            </article>
+
+            <article class="panel">
+              <h3>Primary Service Areas</h3>
+              <ul>
+                <li>Alberton, Germiston, Boksburg</li>
+                <li>Bedfordview, Edenvale, Kempton Park</li>
+                <li>Johannesburg South, Randburg, Midrand</li>
+                <li>Nearby areas by arrangement</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section id="service-zones" class="subscribe reveal">
+        <h2>Fast Response Booking and Coverage Confirmation</h2>
+        <p>Send your area and photos first, then we confirm slot availability and exact pricing before dispatch.</p>
+        <div class="subscribe-form" aria-label="Booking actions">
+          <a class="btn primary js-wa" href="#" target="_blank" rel="noopener noreferrer">Send Area and Photos</a>
+          <a class="btn secondary js-call" href="#">Call for Availability</a>
+        </div>
+        <ul class="subscribe-points">
+          <li>Primary areas: Alberton, Germiston, Boksburg</li>
+          <li>Nearby zones handled by schedule window</li>
+          <li>Fabric couches and rugs only, leather excluded</li>
+        </ul>
+      </section>
+
+      <footer class="footer-dark reveal">
+        <div class="footer-grid">
+          <section class="footer-block">
+            <h3>Stain Strike</h3>
+            <p>Fabric couch and rug cleaning with stain-first treatment and clear quote flow.</p>
+            <p><strong>Working Hours</strong><br>Monday to Saturday: 9am - 7pm<br>Sunday: Closed</p>
+          </section>
+
+          <section class="footer-block">
+            <h3>Pages</h3>
+            <ul>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#process">Process</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#info">Quick Info</a></li>
+            </ul>
+          </section>
+
+          <section class="footer-block">
+            <h3>Service Areas</h3>
+            <ul>
+              <li>Alberton</li>
+              <li>Germiston</li>
+              <li>Boksburg</li>
+              <li>Johannesburg South</li>
+            </ul>
+          </section>
+
+          <section class="footer-block">
+            <h3>Contact</h3>
+            <p>Phone: <a class="js-call" href="#">0768758456</a></p>
+            <p>Email: <a id="email-link-footer" href="mailto:johan@stainstrike.co.za">johan@stainstrike.co.za</a></p>
+            <p><a class="js-wa" href="#" target="_blank" rel="noopener noreferrer">WhatsApp for Quote</a></p>
+          </section>
+        </div>
+
+        <p class="footer-bottom">Stain Strike | Fabric couch and rug cleaning specialists</p>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      var waHref = "https://wa.me/" + STAIN_STRIKE_WA + "?text=" + encodeURIComponent(STAIN_STRIKE_WA_PREFILL);
+      var telHref = "tel:" + STAIN_STRIKE_PHONE.replace(/\s+/g, "");
+      var emailHref = "mailto:" + STAIN_STRIKE_EMAIL;
+
+      document.querySelectorAll(".js-wa").forEach(function (link) { link.href = waHref; });
+      document.querySelectorAll(".js-call").forEach(function (link) { link.href = telHref; });
+      document.querySelectorAll("#email-link-footer").forEach(function (link) {
+        link.href = emailHref;
+        link.textContent = STAIN_STRIKE_EMAIL;
+      });
+
+      var menuToggle = document.getElementById("menu-toggle");
+      var primaryNav = document.getElementById("primary-nav");
+      if (menuToggle && primaryNav) {
+        menuToggle.addEventListener("click", function () {
+          var open = primaryNav.classList.toggle("open");
+          menuToggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+
+        primaryNav.querySelectorAll("a").forEach(function (a) {
+          a.addEventListener("click", function () {
+            if (window.innerWidth <= 900) {
+              primaryNav.classList.remove("open");
+              menuToggle.setAttribute("aria-expanded", "false");
+            }
+          });
+        });
+      }
+
+      var revealEls = document.querySelectorAll(".reveal");
+      var reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      function revealHashTarget() {
+        if (!window.location.hash) return;
+        var id = window.location.hash.slice(1);
+        if (!id) return;
+        var target = document.getElementById(id);
+        if (target && target.classList.contains("reveal")) {
+          target.classList.add("in");
+        }
+      }
+
+      if (reducedMotion || !("IntersectionObserver" in window)) {
+        revealEls.forEach(function (el) { el.classList.add("in"); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("in");
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.14, rootMargin: "0px 0px -8% 0px" });
+
+        revealEls.forEach(function (el) {
+          if (el.classList.contains("hero")) {
+            el.classList.add("in");
+            return;
+          }
+          io.observe(el);
+        });
+      }
+
+      window.addEventListener("hashchange", revealHashTarget);
+      window.setTimeout(revealHashTarget, 40);
+
+      window.requestAnimationFrame(function () {
+        document.body.classList.add("loaded");
+      });
+    })();
+  </script>
+</body>
+</html>
+

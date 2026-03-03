@@ -1,0 +1,13 @@
+ref_frames/
+
+# Local reference media
+reference .mp4
+ref_sheet_*.jpg
+
+# Local render/debug captures
+chrome_*.png
+edge_*.png
+page_*.png
+
+# Common local noise
+*.log

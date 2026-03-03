@@ -1,0 +1,62 @@
+html,
+body {
+  background: #f8fafc;
+  color: #0b1220;
+}
+
+.section,
+.section-alt {
+  background: transparent;
+}
+
+.section {
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.section:first-of-type {
+  border-top: 0;
+}
+
+.qt-section-prep {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.qt-section-in {
+  animation: qt-reveal 0.75s ease-out forwards;
+}
+
+@keyframes qt-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#how-it-works {
+  --how-bg-scale: 1;
+}
+
+#how-it-works::before {
+  transform: none !important;
+  transition: none !important;
+}
+
+#how-it-works::after {
+  background: rgba(248, 250, 252, 0.85);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qt-section-prep {
+    opacity: 1;
+    transform: none;
+  }
+
+  .qt-section-in {
+    animation: none;
+  }
+}

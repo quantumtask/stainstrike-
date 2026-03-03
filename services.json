@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "stain-strike",
+    "filename": "index.html",
+    "tradeDisplay": "Stain Strike",
+    "pageTitle": "Stain Strike | Couch and Rug Cleaning That Actually Removes Stains",
+    "metaDescription": "Fabric couch and rug cleaning with real stain removal. No leather. Fast bookings via WhatsApp. Serving Alberton, Germiston, Boksburg, Bedfordview, Edenvale, Kempton Park, Johannesburg South, Randburg. Free quote.",
+    "h1": "Stain Strike: couch and rug cleaning that removes stains (fabric only, no leather).",
+    "heroSub": "Deep extraction for couches and rugs, stain-focused pretreatment, and fast dry times. Send photos on WhatsApp for an exact quote.",
+    "metaLabel": "For fabric couches and rugs",
+    "metaList": "Couches | Rugs | Stain removal | Odour add-ons",
+    "painPoints": [
+      "Stains keep coming back after a quick steam",
+      "No one tells you upfront if the stain is removable",
+      "Hidden fees when they arrive",
+      "Leather gets treated like fabric (and gets damaged)"
+    ],
+    "offerBullets": [
+      "Fabric couch and rug cleaning (no leather)",
+      "Photo quoting on WhatsApp for accurate pricing",
+      "Stain-focused pretreatment and deep extraction",
+      "Optional odour treatment and fabric protector",
+      "Clear dry-time guidance and aftercare"
+    ],
+    "faq": [
+      {
+        "q": "Do you clean leather?",
+        "a": "No. We only clean fabric upholstery and rugs."
+      },
+      {
+        "q": "Can you remove every stain?",
+        "a": "No honest operator promises that. We will tell you the probability after photos; most organic stains improve dramatically."
+      },
+      {
+        "q": "How long to dry?",
+        "a": "Typically a few hours; ventilation speeds it up."
+      },
+      {
+        "q": "Do you move furniture?",
+        "a": "Light items yes; heavy items by request."
+      },
+      {
+        "q": "What do you need from me?",
+        "a": "Access to water and a plug point, and parking close by."
+      }
+    ],
+    "shortProof": [
+      "Fabric-only (no leather)",
+      "Photo quote before booking",
+      "Stain-first process, not a rinse"
+    ],
+    "areasServed": [
+      "Alberton",
+      "Germiston",
+      "Boksburg",
+      "Bedfordview",
+      "Edenvale",
+      "Kempton Park",
+      "Johannesburg South",
+      "Randburg"
+    ]
+  }
+]
