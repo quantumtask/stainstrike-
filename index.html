@@ -7,7 +7,12 @@
   <meta name="description" content="Fabric couch and rug cleaning by Stain Strike. Send WhatsApp photos for an exact quote before booking.">
   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   <script>
-    if (location.protocol !== "https:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+    const isLocalPreview =
+      location.protocol === "file:" ||
+      location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1";
+
+    if (!isLocalPreview && location.protocol !== "https:") {
       location.replace(`https://${location.host}${location.pathname}${location.search}${location.hash}`);
     }
   </script>
@@ -88,17 +93,28 @@
     }
 
     .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
       text-decoration: none;
       font-family: "Sora", sans-serif;
       font-size: 1.35rem;
       font-weight: 800;
+      line-height: 1;
       letter-spacing: 0.01em;
       text-transform: uppercase;
       color: var(--ink);
       white-space: nowrap;
     }
 
-    .brand span { color: var(--brand); }
+    .brand img {
+      width: 46px;
+      height: 46px;
+      object-fit: contain;
+      flex-shrink: 0;
+    }
+
+    .brand-wordmark span { color: var(--brand); }
 
     nav {
       display: flex;
@@ -1094,7 +1110,10 @@
 
   <header>
     <div class="container nav-wrap">
-      <a class="brand" href="index.html"><span>Stain</span>Strike</a>
+      <a class="brand" href="index.html">
+        <img src="stain strike logo.png" alt="Stain Strike logo">
+        <span class="brand-wordmark"><span>Stain</span>Strike</span>
+      </a>
       <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
       <nav id="primary-nav" aria-label="Primary">
         <a href="#services">Services</a>
