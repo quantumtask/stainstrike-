@@ -43,7 +43,11 @@
     }
 
     * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+      text-size-adjust: 100%;
+    }
 
     body {
       margin: 0;
@@ -53,6 +57,8 @@
         radial-gradient(900px 380px at 6% -2%, rgba(47, 104, 246, 0.1), transparent 70%),
         var(--bg);
       overflow-x: hidden;
+      -webkit-tap-highlight-color: rgba(47, 104, 246, 0.18);
+      -webkit-font-smoothing: antialiased;
     }
 
     .container {
@@ -1031,7 +1037,11 @@
     }
 
     @media (max-width: 900px) {
-      .menu-toggle { display: inline-flex; }
+      .menu-toggle {
+        display: inline-flex;
+        min-height: 44px;
+        padding: 10px 16px;
+      }
 
       nav {
         display: none;
@@ -1041,39 +1051,118 @@
         top: calc(100% + 8px);
         background: rgba(255, 255, 255, 0.98);
         border: 1px solid #d8e1f6;
-        border-radius: 12px;
-        padding: 10px;
+        border-radius: 14px;
+        padding: 8px;
         flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        box-shadow: 0 18px 38px rgba(18, 31, 73, 0.12);
       }
 
       nav.open { display: flex; }
-      .nav-wrap { position: relative; }
+      nav a {
+        padding: 14px 16px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+      }
+      nav a.nav-cta {
+        justify-content: center;
+        margin-top: 6px;
+      }
+      .nav-wrap { position: relative; min-height: 68px; }
 
-      .stack { gap: 56px; }
+      main section[id] { scroll-margin-top: 84px; }
+
+      .stack { gap: 50px; margin-top: 44px; }
     }
 
     @media (max-width: 680px) {
-      main { padding-top: 16px; }
+      main { padding: 14px 0 56px; }
+      main section[id] { scroll-margin-top: 78px; }
+      .container { width: min(1240px, 94vw); }
+      .stack { gap: 42px; margin-top: 36px; }
+
       .hero { padding: 12px; border-radius: 20px; }
-      .hero-copy { padding: 20px; }
-      .hero-copy h1 { font-size: clamp(1.9rem, 9.2vw, 2.9rem); }
+      .hero-grid { gap: 12px; }
+      .hero-copy { padding: 22px; gap: 12px; }
+      .hero-copy h1 {
+        font-size: clamp(1.9rem, 9.2vw, 2.9rem);
+        max-width: none;
+      }
+      .lead { font-size: 1rem; max-width: none; }
       .actions { flex-direction: column; }
-      .btn { width: 100%; }
+      .btn { width: 100%; min-height: 50px; }
+      .review-strip { gap: 12px; padding-top: 12px; }
+      .review-item { min-width: 0; flex: 1 1 140px; }
+      .hero-media { aspect-ratio: 4 / 3; min-height: 0; }
+      .hero-media img { transform: none; }
+      .stat-card {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        padding: 12px;
+        border-radius: 12px;
+      }
+      .stat-text { font-size: 0.9rem; }
+
+      .section-title { font-size: clamp(1.55rem, 7.4vw, 2.2rem); }
+      .section-sub { font-size: 0.96rem; }
+
+      .service-card { min-height: 0; padding: 18px; }
+      .service-card .service-icon { justify-self: start; }
+      .service-card h3 { font-size: 1.28rem; }
+
       .how-card {
-        min-height: 240px;
+        min-height: 220px;
+        padding: 22px 20px;
       }
       .how-card .step {
-        font-size: 2.1rem;
+        font-size: 2rem;
+        top: 14px;
+        left: 20px;
       }
-      .how-card h3 {
-        font-size: 1.3rem;
+      .how-card h3 { font-size: 1.3rem; }
+      .how-card p { font-size: 0.96rem; }
+      .how-card.cta {
+        transform: none;
+        padding-top: 24px;
       }
-      .how-card p {
-        font-size: 0.94rem;
+      .how-card.cta:hover { transform: none; }
+      .how-card.cta .btn { min-height: 50px; }
+
+      .ticker-track {
+        font-size: clamp(1.6rem, 7.4vw, 2.6rem);
+        gap: 22px;
+        padding: 12px 0;
       }
-      .how-card.cta .btn {
-        min-height: 50px;
+
+      .feature-item { padding: 14px; }
+
+      .booking-image img { min-height: 260px; }
+      .booking-panel { padding: 18px; }
+      .booking-form input,
+      .booking-form select,
+      .booking-form textarea {
+        min-height: 48px;
+        padding: 12px 16px;
       }
+
+      .quote-grid { padding-top: 12px; }
+      .quote-grid img { aspect-ratio: 4 / 3; max-height: 320px; }
+      .quote-card { padding: 16px; }
+
+      .post-card img { aspect-ratio: 16 / 9; }
+      .testi-metric { font-size: clamp(1.7rem, 7.6vw, 2.4rem); }
+      .panel { padding: 16px; }
+
+      .subscribe { padding: 18px; margin-top: 44px; }
+      .subscribe h2 { font-size: clamp(1.35rem, 6.6vw, 1.9rem); }
+
+      .footer-dark { padding: 18px; }
+      .footer-grid { gap: 22px; }
+      .footer-bottom { font-size: 0.84rem; }
+
       .booking-form,
       .service-grid,
       .how-grid,
@@ -1093,6 +1182,42 @@
       .subscribe-form .btn {
         width: 100%;
       }
+    }
+
+    @media (max-width: 480px) {
+      .brand-wordmark { display: none; }
+      .brand img { width: 42px; height: 42px; }
+      .nav-wrap { min-height: 62px; gap: 8px; }
+      .menu-toggle { padding: 9px 14px; font-size: 0.94rem; }
+
+      .hero { padding: 10px; }
+      .hero-copy { padding: 18px; }
+      .hero-copy h1 {
+        font-size: clamp(1.7rem, 9.4vw, 2.4rem);
+        line-height: 1.05;
+      }
+      .stat-value { font-size: 1.16rem; }
+      .stat-text { font-size: 0.84rem; }
+      .stat-card { padding: 10px 12px; }
+
+      .section-title { font-size: clamp(1.45rem, 7.6vw, 2rem); }
+
+      .how-card { min-height: 200px; padding: 20px 18px; }
+      .how-card .step { font-size: 1.8rem; top: 14px; left: 18px; }
+      .how-card h3 { font-size: 1.18rem; }
+      .how-card p { font-size: 0.92rem; }
+
+      .booking-image img { min-height: 220px; }
+      .booking-panel { padding: 16px; }
+      .quote-card blockquote { font-size: 1.06rem; }
+
+      .ticker-track {
+        font-size: clamp(1.4rem, 8.2vw, 2.2rem);
+        gap: 18px;
+        padding: 10px 0;
+      }
+
+      .footer-bottom { font-size: 0.8rem; }
     }
 
     @media (prefers-reduced-motion: reduce) {
